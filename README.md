@@ -17,7 +17,7 @@ Este projeto serve como um exemplo prático dos pilares e boas práticas da POO:
 
 O sistema é modelado através de um conjunto de classes e interfaces que se relacionam para formar a lógica de negócio. A estrutura principal é baseada no diagrama UML a seguir:
 
-![Diagrama UML do Projeto](https://turing.inf.ufg.br/pluginfile.php/196422/mod_assign/intro/tarefa%206%20%282%29.png)
+![Diagrama UML do Projeto](diagrama-uml.png)
 
 ### Principais Componentes:
 
