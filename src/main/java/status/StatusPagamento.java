@@ -1,4 +1,4 @@
-package io.github.savioteles.sistemapedidos.status;
+package status;
 
 public enum StatusPagamento {
     PENDENTE,

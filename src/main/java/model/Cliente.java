@@ -1,4 +1,4 @@
-package io.github.savioteles.sistemapedidos.model;
+package model;
 
 public abstract class Cliente {
     protected String nome;

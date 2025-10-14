@@ -1,12 +1,10 @@
-package io.github.savioteles.sistemapedidos;
-
-import io.github.savioteles.sistemapedidos.model.Cliente;
-import io.github.savioteles.sistemapedidos.model.ClientePF;
-import io.github.savioteles.sistemapedidos.model.Pedido;
-import io.github.savioteles.sistemapedidos.model.Produto;
-import io.github.savioteles.sistemapedidos.pagamento.IPagamento;
-import io.github.savioteles.sistemapedidos.pagamento.PagamentoCartaoCredito;
-import io.github.savioteles.sistemapedidos.pagamento.PagamentoBoleto;
+import model.Cliente;
+import model.ClientePF;
+import model.Pedido;
+import model.Produto;
+import pagamento.IPagamento;
+import pagamento.PagamentoCartaoCredito;
+import pagamento.PagamentoBoleto;
 
 import java.time.LocalDate;
 

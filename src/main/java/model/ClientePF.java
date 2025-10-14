@@ -1,4 +1,4 @@
-package io.github.savioteles.sistemapedidos.model;
+package model;
 
 import java.time.LocalDate;
 

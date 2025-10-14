@@ -1,6 +1,6 @@
-package io.github.savioteles.sistemapedidos.model;
-import io.github.savioteles.sistemapedidos.pagamento.IPagamento;
-import io.github.savioteles.sistemapedidos.status.StatusPedido;
+package model;
+import pagamento.IPagamento;
+import status.StatusPedido;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

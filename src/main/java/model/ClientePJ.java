@@ -1,4 +1,4 @@
-package io.github.savioteles.sistemapedidos.model;
+package model;
 
 public class ClientePJ extends Cliente {
     private String cnpj;
