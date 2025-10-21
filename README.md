@@ -39,40 +39,27 @@ Para executar a simulação, você precisa de um ambiente de desenvolvimento Jav
     *Observação: Se você organizou os arquivos em pacotes, o comando de compilação deverá ser ajustado de acordo.*
 
 2.  **Crie um Ponto de Entrada (`main`):**
-    Para testar o fluxo, crie uma classe `SistemaPedidos.java` com um método `main`, como no exemplo abaixo:
+    Para testar o fluxo, crie uma classe `main.SistemaPedidos.java` com um método `main`, como no exemplo abaixo:
 
     ```java
-    import java.time.LocalDate;
-
+    import model.Produto;
+    import org.springframework.boot.SpringApplication;
+    import org.springframework.boot.autoconfigure.SpringBootApplication;
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.RequestParam;
+    import org.springframework.web.bind.annotation.RestController;
+    
+    @SpringBootApplication
+    @RestController
     public class SistemaPedidos {
+    
         public static void main(String[] args) {
-            // 1. Crie Clientes
-            Cliente clientePF = new ClientePF("C001", "João Silva", "joao@email.com", "11987654321", "123.456.789-00", LocalDate.of(1990, 5, 15));
-
-            // 2. Crie Produtos
-            Produto notebook = new Produto("P001", "Notebook Gamer", 7500.00, "Notebook de alta performance");
-            notebook.adicionarEstoque(10);
-            Produto mouse = new Produto("P002", "Mouse sem fio", 250.00, "Mouse ergonômico");
-            mouse.adicionarEstoque(50);
-
-            // 3. Crie um Pedido
-            Pedido pedido = new Pedido(clientePF);
-            System.out.println("Status inicial do pedido: " + pedido.getStatusPedido());
-
-            // 4. Adicione Itens
-            pedido.adicionarItem(notebook, 1);
-            pedido.adicionarItem(mouse, 2);
-            System.out.println("Valor total do pedido: R$" + pedido.calcularTotal());
-
-            // 5. Crie e associe um Método de Pagamento (Cartão com valor que será aprovado)
-            IPagamento cartao = new PagamentoCartaoCredito("1234-5678-9012-3456", "Joao F Silva", LocalDate.now().plusYears(3));
-            pedido.setMetodoPagamento(cartao);
-
-            // 6. Confirme o Pedido
-            boolean confirmado = pedido.confirmarPedido();
-            System.out.println("Pedido foi confirmado? " + confirmado);
-            System.out.println("Status do pagamento: " + pedido.getMetodoPagamento().getStatus());
-            System.out.println("Status final do pedido: " + pedido.getStatusPedido());
+            SpringApplication.run(SistemaPedidos.class, args);
+        }
+    
+        @GetMapping("/hello")
+        public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+            return String.format("Hello %s!", name);
         }
     }
     ```
@@ -80,7 +67,7 @@ Para executar a simulação, você precisa de um ambiente de desenvolvimento Jav
 3.  **Execute a Simulação:**
     Após compilar novamente, execute a classe principal:
     ```bash
-    java SistemaPedidos
+    java main.SistemaPedidos
     ```
 
 ## Autores
