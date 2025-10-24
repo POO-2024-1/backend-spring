@@ -1,6 +1,6 @@
-package model;
-import pagamento.IPagamento;
-import status.StatusPedido;
+package poo;
+import poo.IPagamento;
+import poo.StatusPedido;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

@@ -1,6 +1,4 @@
-package pagamento;
-
-import status.StatusPagamento;
+package poo;
 
 import java.time.LocalDate;
 

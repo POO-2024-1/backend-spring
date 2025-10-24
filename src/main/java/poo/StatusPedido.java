@@ -1,4 +1,4 @@
-package status;
+package poo;
 
 public enum StatusPedido {
     PENDENTE,

@@ -1,4 +1,4 @@
-package model;
+package poo;
 
 public class ItemPedido {
     private Produto produto;

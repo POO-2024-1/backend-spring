@@ -1,4 +1,4 @@
-package model;
+package poo;
 
 public class Produto {
     private String nome;

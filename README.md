@@ -38,11 +38,11 @@ Para executar a simulação, você precisa de um ambiente de desenvolvimento Jav
     ```
     *Observação: Se você organizou os arquivos em pacotes, o comando de compilação deverá ser ajustado de acordo.*
 
-2.  **Crie um Ponto de Entrada (`main`):**
-    Para testar o fluxo, crie uma classe `main.SistemaPedidos.java` com um método `main`, como no exemplo abaixo:
+2. **Crie um Ponto de Entrada (`main`):**
+    Para testar o fluxo, crie uma classe `poo.SistemaPedidos.java` com um método `main`, como no exemplo abaixo:
 
-    ```java
-    import model.Produto;
+     ```java
+
     import org.springframework.boot.SpringApplication;
     import org.springframework.boot.autoconfigure.SpringBootApplication;
     import org.springframework.web.bind.annotation.GetMapping;
@@ -62,12 +62,10 @@ Para executar a simulação, você precisa de um ambiente de desenvolvimento Jav
             return String.format("Hello %s!", name);
         }
     }
-    ```
-
-3.  **Execute a Simulação:**
+    ```ação:**
     Após compilar novamente, execute a classe principal:
     ```bash
-    java main.SistemaPedidos
+    java poo.SistemaPedidos
     ```
 
 ## Autores

@@ -1,6 +1,4 @@
-package pagamento;
-
-import status.StatusPagamento;
+package poo;
 
 public interface IPagamento {
     boolean processarPagamento(double valor);

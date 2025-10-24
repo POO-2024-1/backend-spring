@@ -1,4 +1,4 @@
-package model;
+package poo;
 
 public class ClientePJ extends Cliente {
     private String cnpj;
