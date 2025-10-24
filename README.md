@@ -62,11 +62,13 @@ Para executar a simulação, você precisa de um ambiente de desenvolvimento Jav
             return String.format("Hello %s!", name);
         }
     }
-    ```ação:**
-    Após compilar novamente, execute a classe principal:
+   ```
+   
+   Após compilar novamente, execute a classe principal:
     ```bash
     java poo.SistemaPedidos
-    ```
+    ```bash
+    
 
 ## Autores
 
