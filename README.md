@@ -67,7 +67,7 @@ Para executar a simulação, você precisa de um ambiente de desenvolvimento Jav
    Após compilar novamente, execute a classe principal:
     ```bash
     java poo.SistemaPedidos
-    ```bash
+    ```
     
 
 ## Autores
