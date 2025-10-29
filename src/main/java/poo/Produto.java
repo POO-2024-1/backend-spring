@@ -7,12 +7,12 @@ public class Produto {
     private String id;
     private String descricao;
 
-    public Produto(String id, String nome, double preco, String descricao) {
+    public Produto(String id, String nome, double preco, String descricao, int estoque) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.descricao = descricao;
-        this.estoque = 0;
+        this.estoque = estoque;
     }
 
     public String getNome() {
